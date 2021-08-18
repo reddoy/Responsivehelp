@@ -1,0 +1,362 @@
+
+/* CSS reset for browser setttings*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end of CSS reset*/
+
+/*========= Fonts ===========*/
+
+@font-face {
+    font-family: Proxima;
+    src: url("/Users/rohanomalley/Documents/Bootcamp/fonts/ProximaNova-Bold.woff");
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url("/Users/rohanomalley/Documents/Bootcamp/Gotham Site/Mockup/Exported Fonts/Roboto/Roboto-Light.ttf");
+}
+
+
+/*===== Nav-Bar Section (Top) ========*/
+.wrapper .page-header{
+    width: auto;
+    height: 69px;
+    background-color: cadetblue;
+    display: flex;
+}
+
+header {
+    background-color: cadetblue;
+    width: auto;
+}
+
+.logo {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/24/NFT_Icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+
+}
+
+.wrapper .page-header ul{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper .page-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.left-nav li{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 0 35px;
+}
+
+.right-nav li{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 0 35px;
+}
+
+/*========= Main ===========*/
+
+main {
+    width: 100%;
+}
+
+main h2 {
+    font-family: Proxima;
+    padding: 10px 0; 
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.article-image {
+    width: 30%;
+}
+img{
+    object-fit: contain;
+    width: 170px;
+    height: 120px;
+}
+
+.right-article {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+article {
+    display: flex;
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+article h3 {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+.article-info span {
+    font-family: Roboto-Light;
+    font-size: 12px;
+    color: rgb(143, 143, 143);
+}
+.article-info {
+    padding: 5px 0;
+}
+
+.article-info span::after{
+    display: inline-block;
+    content: '|';
+    color: cadetblue;
+    size: 25px;
+    padding-left: 3px;
+}
+.article-info span:last-child:after{
+    display: none;
+}
+
+.description {
+    font-family: Roboto-Light;
+    font-size: 16px;
+}
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.more {
+    width: 170px;
+    height: 42px;
+    background: transparent;
+    color: black;
+    display: block;
+    margin: 18px auto;
+
+}
+.notextdecor{
+    text-decoration: none;
+    color: initial;
+    display: flex;
+}
+
+/*========= Right Aside =========*/
+
+
+.main .wrapper {
+    display: flex;
+}
+.right-sidebar {
+    padding-top: 65px;
+    padding-left: 10px;
+}
+.searchbox {
+    width: 100%;
+    position: relative;
+}
+
+.searchbox input {
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px ;
+    outline: none;
+    border: 1px solid cadetblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.searchbox label {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    z-index: 100;
+}
+
+.calendar .calendartop {
+    display: flex;
+    border: 1px solid cadetblue;
+    justify-content: space-around;
+    border-radius: 3px 3px 0 0;
+    padding: 4px 0;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.calendartop i {
+    color: darkslategray;
+}
+.calendartop p {
+    font-family:Roboto-Light;
+    font-size: 12px;
+    color: darkslategray;
+}
+
+.calendarbody table{
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+.calendarbody table th {
+    height: 26px;
+    border: 1px solid cadetblue;
+    text-align: center;
+    vertical-align: middle;
+    background: lightgray;
+    color: darkslategray;
+    font-family: Roboto-Light;
+    font-size: 12px;
+}
+.calendarbody table td {
+    height: 33px;
+    border: 1px solid cadetblue;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Roboto-Light;
+    font-size: 11px;
+}
+/*======= Footer ========*/
+
+.page-footer {
+    width: 100%;
+    height: 40px;
+    background-color: cadetblue;
+}
+
+.page-footer .wrapper{
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.circles .circle {
+    width: 30px;
+    height: 30px;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+/*======= Hovers ========*/
+
+article:hover {
+    border: 1px solid #000;
+}
+
+li:hover {
+    color: white;
+}
+.more:hover{
+    border-color: cadetblue;
+    color: darkslategray;
+}
+
+.calendarbody table td:hover{
+    background: lightsalmon;
+
+}
+
+.calendarprev i:hover, .calendarnext i:hover{
+    color: lightsalmon;
+}
+
+/* ======== Responsive Queries =======*/
+
+@media (max-width: 75em){
+    .main .wrapper{
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper{
+        width: 100%;
+    }
+
+    article {
+        flex-direction: column;
+        width: 48%;
+    }
+    .articles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .right-article {
+        padding-left: 0;
+    }
+    .article-image {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    article .notextdecor {
+        display: flex;
+        flex-direction: column;
+    }
+}  
+/* @media (max-width:36.125em){
+
+} */
